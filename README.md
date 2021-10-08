@@ -8,7 +8,7 @@ ans: A rectangle box is wrapped around every HTML element. The box model is used
 Question 2. What are the advantages of using CSS?
 ans: The main advantages of CSS are given below:
      1) Separation of content from presentation - CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.
-     2) Easy to maintain - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and         all elements in all the web pages will be updated automatically.
+     2) Easy to maintain - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style,         and all elements in all the web pages will be updated automatically.
      3) Bandwidth - Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.
 
 Question 3. What are the limitations of CSS?
@@ -61,4 +61,20 @@ Question 11. Difference between CSS grid vs flexbox?
 ans: CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.
      Flexbox is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
 
+
+Question 12. What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?
+ans: CSS variables can be used without the need of the preprocessor. Currently, all the major browsers support the CSS variables. 
+     CSS variable cascade. But the preprocessor variables don’t cascade. 
+     CSS variable can be accessed and manipulated javascript.
+
+
+Question 13. What does * { box-sizing: border-box; } do? What are its advantages?
+ans: It makes every element in the document include the padding and border in the element’s inner dimension for the height and width computation.  In box-sizing: border-box,      The height of an element is now calculated by the content's height + vertical padding + vertical border width.
+     The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.
+
+Question 14. What is specificity? How to calculate specificity?
+A process of determining which CSS rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then the class value (or pseudo-class or attribute selector), the universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+
+Question 15. What are the advantages of using translate() instead of absolute position?
+ans: Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow.        So, translate() gives the better performance.
 
