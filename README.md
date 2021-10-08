@@ -32,4 +32,33 @@ ans: There are different ways to include a CSS in a webpage,
                                   @import "path/to/style.css";
      5. What are the different types of Selectors in CSS?
  
-    
+Question 5. Can you name the four types of @media properties?
+ans: The four types of @media properties are:
+     All → It’s the default property. Used for all media-type devices.
+     Screen → Used for computer screen, mobile screen.
+     Print → Used for printers.
+     Speech → Used for screen readers.
+
+Question 6. What is the grid system?
+ans: CSS Grid Layout is the most powerful layout system available in CSS. It is said to be a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox      which is largely a 1-dimensional system.
+
+Question 7. What are the different ways to hide the element using CSS?
+ans: Using display property(display: none). It’s not available for screen readers. The element will not exist in the DOM if display: none is used.
+     Using visibility property(visibility: hidden), will take up the space of the element. It will be available to screen reader users. The element will actually be present        in the DOM, but not shown on the screen.
+     Using position property (position: absolute). Make it available outside the screen.
+
+Question 8. What does the :root pseudo-class refer to?
+ans: The root selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
+
+Question 9. What does Accessibility (a11y) mean?
+ans: Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as visual impairment, hearing        loss, or limited dexterity.
+     For example, a website developed with accessibility in mind might have text-to-speech capabilities. In the USA public websites have to have accessible compliance. It’s        defined in 508 compliance. It gives the guidelines and best practices for all website users that should be met with key areas of accessibility.
+
+Question 10. How do I restore the default value of a property?
+ans: The keyword initial can be used to reset it to its default value.
+
+Question 11. Difference between CSS grid vs flexbox?
+ans: CSS Grid Layout is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.
+     Flexbox is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
+
+
