@@ -16,3 +16,20 @@ ans: Disadvantages of CSS are given below:
      1) Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is supported or not using the @support selector).
      2) Cross Browser issue: Some selectors behave differently in a different browser).
      3) There is no parent selector: Currently, Using CSS, you can’t select a parent tag.
+
+Question 4. How to include CSS in the webpage?
+ans: There are different ways to include a CSS in a webpage, 
+     1 -External Style Sheet: An external file linked to your HTML document: Using link tag, we can link the style sheet to the HTML page.
+                                 <link rel="stylesheet" type="text/css" href="mystyles.css" />
+     2 -Embed CSS with a style tag: A set of CSS styles included within your HTML page.
+                                 <style type="text/css">
+                                 /*Add style rules here*/
+                                 </style>
+        Add your CSS rules between the opening and closing style tags and write your CSS exactly the same way as you do in stand-alone stylesheet files.
+     3 -Add inline styles to HTML elements(CSS rules applied directly within an HTML tag.): Style can be added directly to the HTML element using a style tag.
+                                 <h2 style="color:red;background:black">Inline Style</h2>
+     4 -Import a stylesheet file (An external file imported into another CSS file): Another way to add CSS is by using the @import rule. This is to add a new CSS file within         CSS itself.
+                                  @import "path/to/style.css";
+     5. What are the different types of Selectors in CSS?
+ 
+    
