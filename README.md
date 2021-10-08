@@ -73,8 +73,141 @@ ans: It makes every element in the document include the padding and border in th
      The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.
 
 Question 14. What is specificity? How to calculate specificity?
-A process of determining which CSS rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then the class value (or pseudo-class or attribute selector), the universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+ans: A process of determining which CSS rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then        the class value (or pseudo-class or attribute selector), the universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
 
 Question 15. What are the advantages of using translate() instead of absolute position?
 ans: Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM reflow.        So, translate() gives the better performance.
+
+Question 16. What is CSS specificity?
+Ans: CSS specificity is a score or rank that decides which style declaration has to be used to an element. (*) this universal selector has low specificity while ID selectors      have high specificity.
+     There are four categories in CSS which authorize the specificity level of the selector.
+     Inline style
+     IDs
+     Classes, Attributes, and pseudo-classes.
+     Elements and pseudo-elements.
+
+Question 17. How can we calculate specificity?
+Ans: To calculate specificity we will start with 0, then we have to add 1000 for each ID and we have to add 10 to the attributes, classes or pseudo-classes with each element      name or pseudo-element and later we have to add 1 to them.
+
+Question 18. What are gradients in CSS?
+Ans : It is a property of CSS which allows you to display a smooth transformation between two or more than two specified colors.
+      There are two types of gradients that are present in CSS. They are:
+      Linear Gradient
+      Radial Gradient
+     
+Question 19. What is CSS flexbox?
+Ans: It allows you to design a flexible responsive layout structure without using any float or positioning property of CSS. To use CSS flexbox you need to define a flex           container initially.
+    Example:
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+    <style>
+    .flex-container {
+     display: flex;
+     background-color: #f4b042;
+     }
+     .flex-container > div {
+     background-color: #d60a33;
+     margin: 10px;
+     padding: 20px;
+     font-size: 30px;
+     }
+     </style>
+     </head>
+     <body>
+     <div class="flex-container">
+       <div>1</div>
+       <div>2</div>
+      <div>3</div> 
+     </div>
+     <p> Example of  <em>flex</em>box.</p>
+     </body>
+     </html>
+    
+Question 19. Write all the properties of the flexbox?
+Ans: There are several properties of the flexbox that are used in the HTML webpage.
+     They are:
+     1) flex-direction
+     2) flex-wrap
+     3) flex-flow
+     4) justify-content
+     5) align-items
+     6) align-content   
+     
+Question 20. What is the use of the Box Model in CSS?
+Ans: In CSS, the box model is a box that binds all the HTML elements and it includes features like margins, border, padding, and the actual content.
+     By using a box model we will get the authority to add the borders all around the elements and we can also define the space between the elements.
+
+Question 21. How can we add icons to the web page?
+Ans: We can add icons to the HTML webpage by using an icon library like font-awesome.
+     We have to add the name of the given icon class to any inline HTML element. (<i> or <span>) . Icons in the icon libraries are scalable vectors that can be customized          with CSS.
+
+Question 22. What is a CSS pseudo-class?
+Ans: It is a class that is used to define a special state of an HTML element.
+     This class can be used by styling an element when a user snooped over it and also it can style an HTML element when it gets the focus.
+     selector:pseudo-class {
+     property:value;
+     }
+
+Question 23. Explain the concept of pseudo-elements in CSS.
+Ans: It is a feature of CSS which is used to style the given parts of an element.
+     For Example, we can style the first letter or line of an HTML element.
+     selector::pseudo-element {
+     property:value;
+     }
+     
+Question 24. What is CSS opacity?
+Ans: It is the property that elaborates on the transparency of an element.
+     By this property, we can transparent the image that can take the values from 0.0-1.0. If the value is lower, then the image is more transparent. IE8 and earlier versions      of the browser can take the values from 0-100.
+     
+     img {
+     opacity: 0.6;
+     filter: alpha(opacity=60); /* For IE8 and earlier */}
+
+Question 25. Write all the position states used in CSS.
+Ans: In CSS, there are four position states as stated below:
+     Static(default)
+     Relative
+     Fixed
+     Absolute
+
+Question 26. What are navigation bars in CSS?
+Ans: By using navigation bars we can make an ordinary HTML page into a user-specific and more dynamic web page. Basically, it is a list of links, hence use of <ul> and <li>        elements makes the perfect sense.
+
+     ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     }
+
+Question 27. What are the differences between relative and absolute in CSS?
+Ans: The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px then the padding will        shift to 10px in the left while absolute is totally relative to the non-static parent.
+     It means, if we write left:10px then the result will be 10px far from the left edge of the parent element.
+     
+Question 28. What are the differences between relative and absolute in CSS?
+Ans: The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px then the padding will        shift to 10px in the left while absolute is totally relative to the non-static parent.
+     It means, if we write left:10px then the result will be 10px far from the left edge of the parent element.
+
+Question 29. Define ‘important’ declarations used in CSS?.
+Ans: Important declarations are defined as that declaration which is having more importance than the normal declaration.
+     While executing, these declarations override the declaration which is having less importance.
+     For example, if there are two users having an important declaration then one of the declarations will override the declaration of another user.
+     For Example:
+     Body {background: #FF00FF !important; color: blue}
+     In this body, background has more weight than the color.
+
+Question 30. Define different cascading methods that can be used inside the cascading order?.
+Answer: Cascading order is itself a sorting method that allows many other different sorting methods:
+
+          a) Sort by origin: There are some rules which can provide an alternate way defined as:
+          The normal weight of the style sheet of a particular provider will be overridden by the increased weight of the user’s style sheet.
+          Stylesheet rules of a particular user will be overridden by the normal width of the provider’s style sheet.
+          b) Sort by selector’s specificity: Less specific selector is been overridden by the more specific selector.
+          For example, A contextual selector is less specific in comparison to the ID selector which is a more specific one and with that contextual selector is been                    overridden by the ID selector.
+          c) Sort by order specified: This comes in the scenario when the two selectors are of same weight and the other properties than the specification which will be seen            for overriding.
+           Example:
+               All other styles will be seen overridden if the style attribute is used for inline style.
+               And also, if the link element is used for external style, then it will override the imported style.
+      
 
